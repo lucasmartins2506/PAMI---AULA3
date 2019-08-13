@@ -10,10 +10,41 @@
         android:id="@+id/btnProcessar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:onClick="onProcessar"
         android:text="@string/Processar"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="75dp"
+        android:textColorLink="#000D27A7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome"
         tools:text="@string/Processar" />
+
+    <TextView
+        android:id="@+id/lblNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#2196F3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblNome" />
 
 </android.support.constraint.ConstraintLayout>
